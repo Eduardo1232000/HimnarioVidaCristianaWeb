@@ -133,17 +133,17 @@ export default function HymnaryDashboard() {
       </div>
 
       {/* NAVBAR INFERIOR */}
-      <div className="bg-[#0f0f13]/90 backdrop-blur-xl border-t border-white/5 absolute bottom-0 w-full pb-4 pt-3 px-6 z-30 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
+      <div className="bg-[#0f0f13]/90 backdrop-blur-xl border-t border-white/5 absolute bottom-0 w-full pb-2 pt-1 px-6 z-30 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
         <div className="flex justify-around items-center max-w-sm mx-auto">
           <NavButton 
-            icon={<Music size={26} />} 
+            icon={<Music size={20} />} 
             label="Himnos" 
             isActive={activeTab === 'himnos'} 
             activeClass={THEMES.himnos.navActive}
             onClick={() => { setActiveTab('himnos'); setSearchTerm(''); }}
           />
           <NavButton 
-            icon={<Folder size={26} />} 
+            icon={<Folder size={20} />} 
             label="Folder" 
             isActive={activeTab === 'folder'} 
             activeClass={THEMES.folder.navActive}
