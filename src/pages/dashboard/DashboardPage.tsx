@@ -100,7 +100,7 @@ export default function HymnaryDashboard() {
       </div>
 
       {/* LISTA DE HIMNOS */}
-      <div className="flex-1 overflow-y-auto px-4 pb-24 pt-2 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+      <div className="flex-1 overflow-y-auto px-4 pb-4 pt-2 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
         <div className="space-y-2">
           {filteredFiles.length > 0 ? (
             filteredFiles.map((file, index) => (
@@ -133,7 +133,7 @@ export default function HymnaryDashboard() {
       </div>
 
       {/* NAVBAR INFERIOR */}
-      <div className="bg-[#0f0f13]/90 backdrop-blur-xl border-t border-white/5 absolute bottom-0 w-full pb-2 pt-1 px-6 z-30 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
+      <div className="shrink-0 bg-[#0f0f13]/90 backdrop-blur-xl border-t border-white/5 w-full pb-4 pt-3 px-6 z-30 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
         <div className="flex justify-around items-center max-w-sm mx-auto">
           <NavButton 
             icon={<Music size={20} />} 

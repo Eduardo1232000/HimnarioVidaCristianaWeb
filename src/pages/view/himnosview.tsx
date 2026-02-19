@@ -14,8 +14,7 @@ export default function HymnView({ hymn, themeColors, onBack }: HymnViewProps) {
     const [showSettings, setShowSettings] = useState(false);
 
     return (
-        <div className={`flex flex-col h-screen ${themeColors.bgMain} text-white overflow-hidden font-sans relative transition-colors duration-500`}>
-
+        <div className={`flex flex-col h-[100dvh] ${themeColors.bgMain} text-white overflow-hidden font-sans relative transition-colors duration-500`}>
             {/* --- HEADER SUPERIOR --- */}
             <div className={`shrink-0 z-20 relative ${themeColors.bgHeader} pb-2`}>
                 <div className={`
