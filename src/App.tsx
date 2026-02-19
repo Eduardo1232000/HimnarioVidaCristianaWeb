@@ -4,11 +4,9 @@ import AppRoutes from './routes/AppRoutes.tsx'
 function App() {
   return (
     <div className="font-sans">
-      <BrowserRouter>
+      <BrowserRouter basename="/HimnarioVidaCristianaWeb">
         <AppRoutes />
       </BrowserRouter>
-
-
     </div>
   )
 }
