@@ -78,14 +78,12 @@ export default function HymnView({ hymn, themeColors, onBack }: HymnViewProps) {
                   ${isTitleCard ? 'mb-6 border-b-2 ' + themeColors.borderHeader : ''}
                 `}
                             >
-
-                                <p
-                                    style={{
-                                        fontSize: isTitleCard ? '26px' : `${fontSize}px`,
-                                        lineHeight: isTitleCard ? 1.3 : 1.6,
-                                        fontWeight: isTitleCard ? 'bold' : 'normal',
-                                        color: isTitleCard ? '#fff' : '#e5e7eb'
-                                    }}
+                                <p style={{
+                                    fontSize: isTitleCard ? '26px' : `${fontSize}px`,
+                                    lineHeight: isTitleCard ? 1.3 : 1.6,
+                                    fontWeight: isTitleCard ? 'bold' : 'normal',
+                                    color: isTitleCard ? '#fff' : '#e5e7eb'
+                                }}
                                     className="transition-[font-size] duration-200 ease-out whitespace-pre-line"
                                 >
                                     {paragraph}
@@ -93,7 +91,6 @@ export default function HymnView({ hymn, themeColors, onBack }: HymnViewProps) {
                             </div>
                         );
                     })}
-
                 </div>
             </div>
         </div>

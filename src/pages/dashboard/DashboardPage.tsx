@@ -5,12 +5,12 @@ import HymnView
  from '../view/himnosview';
 type TabType = 'himnos' | 'folder';
 
-// --- CONFIGURACIÓN DE COLORES (THEMING) ---
+// --- CONFIGURACIÓN DE COLORES ---
 const THEMES = {
   himnos: {
     bgMain: 'bg-[#050511]',
     bgHeader: 'bg-[#050511]',
-    cardBg: 'bg-[#11112b]/30', // Color de fondo de las tarjetas en la vista de lectura
+    cardBg: 'bg-[#11112b]/30',
     bgSearch: 'bg-[#11112b]',
     borderHeader: 'border-blue-600/50',
     shadowHeader: 'shadow-[0_4px_30px_rgba(37,99,235,0.3)]',
@@ -24,7 +24,7 @@ const THEMES = {
   folder: {
     bgMain: 'bg-[#120516]',
     bgHeader: 'bg-[#120516]',
-    cardBg: 'bg-[#2a0e30]', // Color de fondo de las tarjetas (Morado oscuro)
+    cardBg: 'bg-[#2a0e30]', 
     bgSearch: 'bg-[#2a0e30]',
     borderHeader: 'border-fuchsia-600/50',
     shadowHeader: 'shadow-[0_4px_30px_rgba(192,38,211,0.3)]',
@@ -46,12 +46,11 @@ export default function HymnaryDashboard() {
   const theme = THEMES[activeTab];
 
   // --- MODO LECTURA ---
-  // Si hay un himno seleccionado, mostramos la vista de lectura en lugar del dashboard
   if (selectedHymn) {
     return (
       <HymnView 
         hymn={selectedHymn} 
-        themeColors={theme} // Pasamos el tema actual para que combine
+        themeColors={theme} 
         onBack={() => setSelectedHymn(null)} 
       />
     );
@@ -106,7 +105,7 @@ export default function HymnaryDashboard() {
             filteredFiles.map((file, index) => (
               <button
                 key={file.id}
-                onClick={() => setSelectedHymn(file)} // AL CLICK, ABRIMOS LA VISTA
+                onClick={() => setSelectedHymn(file)} // AL HACER CLICK, ABRIMOS LA VISTA
                 className={`
                   w-full p-4 rounded-xl flex items-center gap-4 transition-all border border-transparent active:scale-[0.97]
                   ${index % 2 === 0 ? theme.itemEven : theme.itemOdd}
