@@ -90,7 +90,7 @@ export default function HymnaryDashboard() {
               className={`
                 w-full ${theme.bgSearch} text-gray-200 pl-11 pr-4 py-4 rounded-2xl 
                 border border-white/10 ${theme.accentBorder} focus:ring-1 focus:ring-opacity-50
-                outline-none placeholder-gray-500 text-lg transition-all shadow-inner
+                outline-none placeholder-gray-500 text-xl transition-all shadow-inner
               `}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -113,10 +113,10 @@ export default function HymnaryDashboard() {
                   border-b border-white/5 shadow-sm
                 `}
               >
-                <span className={`${theme.accentText} font-bold text-2xl w-12 text-right shrink-0 font-mono tracking-tighter transition-colors duration-300`}>
+                <span className={`${theme.accentText} font-bold text-3xl w-12 text-right shrink-0 font-mono tracking-tighter transition-colors duration-300`}>
                   {file.number > 0 ? file.number : index + 1}.
                 </span>
-                <span className="text-gray-200 font-medium text-lg leading-snug text-left line-clamp-2">
+                <span className="text-gray-200 font-medium text-xl leading-snug text-left line-clamp-2">
                   {file.title}
                 </span>
               </button>
